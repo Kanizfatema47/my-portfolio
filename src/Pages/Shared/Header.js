@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import image from '../../assets/signature.png'
 const Header = () => {
     return (
-        <div class="navbar bg-teal-600">
-            <div class="navbar-start">
+        <div class="navbar bg-teal-600 flex flex-row justify-between">
+            <div class="">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#FFFFFF"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -18,9 +18,9 @@ const Header = () => {
                         <li><Link to='/experience'>Experience</Link></li>
                     </ul>
                 </div>
-                <Link to='/' className='w-1/2'><img src={image} alt="" /></Link>
+                <Link to='/' className='w-10/12'><img src={image} alt="" /></Link>
             </div>
-            <div class="navbar-end  hidden lg:flex ">
+            <div class="  hidden lg:flex ">
                 <ul class="menu menu-horizontal p-0 mr-20 text-lg text-white">
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/projects'>My Projects</Link></li>
